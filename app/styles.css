@@ -88,8 +88,8 @@ select {
 /* ---------------------*/
 
 .flex{
-    display: flex;
-    gap: 2rem;       
+  display: flex;
+  gap: 2rem;       
 }
 
 .bg-primary {background-color: var(--clr-main);}
@@ -99,18 +99,35 @@ select {
 /* ------------------- */
 
 body{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: blue;
-    padding: 0px 350px 0 350px;
+  flex-direction: column;
+  background-color: blue;
+  padding-inline: 40px;
+  padding-top: 40px;
 }
 header{
-    width: 100%;
-    justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
 }
+
 main{
-    background-color: gray;
+  background-color: gray;
+  width: 100%;
+}
+button{
+  border: none;
+}
+@media (min-width: 600px) {
+  body{
+    justify-content: center;
+    align-items: center;
+    padding: 0px 350px 0 350px;
+  }
+  main{
     padding: 25px 25px 25px 25px;
-    width: 100%;
+  }
+}
+
+.search-bar{
+  border-radius: 15px;
+  padding: 20px 10px 20px 10px;
 }
