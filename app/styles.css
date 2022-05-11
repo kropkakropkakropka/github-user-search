@@ -1,12 +1,15 @@
 :root{
-    /* colors */
-    --clr-main: #222f3e;
-    --clr-second: #576574;
+  /* colors */
+  --clr-main: #141D2F;
+  --clr-second: #1E2A47; /*#576574*/
+  --clr-gray: #ced6e0;
+  --clr-white: #ffffff; /*#f1f2f6*/
+  --clr-blue: #0079ff;
+  /* font-sizes for mobile*/
   
-    /* font-sizes for mobile*/
+  /* font-families */
   
-    /* font-families */
-  
+  --border-radius: 10px;
 }
 /* Box sizing rules */
 *,
@@ -66,6 +69,9 @@ textarea,
 select {
   font: inherit;
 }
+input{
+  border: none;
+}
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -92,8 +98,12 @@ select {
   gap: 2rem;       
 }
 
+.radius {border-radius: var(--border-radius);}
 .bg-primary {background-color: var(--clr-main);}
 .bg-second {background-color: var(--clr-second);}
+.white-font {color: var(--clr-white);}
+.gray-font {color: var(--clr-gray);}
+.blue-background {background-color: var(--clr-blue);}
 /* ------------------- */
 /* Page specific       */
 /* ------------------- */
@@ -112,6 +122,7 @@ header{
 main{
   background-color: gray;
   width: 100%;
+  padding: 15px 15px 15px 15px; /*can i do it with clamp?*/
 }
 button{
   border: none;
@@ -128,6 +139,15 @@ button{
 }
 
 .search-bar{
-  border-radius: 15px;
-  padding: 20px 10px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+#search-button{
+  padding: 0 20px 0 20px;
+  height: 100%;
 }
