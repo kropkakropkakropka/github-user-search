@@ -97,6 +97,9 @@ input{
   display: flex;
   gap: 2rem;       
 }
+.grid{
+  display: grid;
+}
 
 .radius {border-radius: var(--border-radius);}
 .bg-primary {background-color: var(--clr-main);}
