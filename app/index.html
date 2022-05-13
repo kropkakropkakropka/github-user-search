@@ -8,40 +8,48 @@
     <script src="https://kit.fontawesome.com/73aecc7b50.js" crossorigin="anonymous"></script>
     <title>Github user search</title>
 </head>
-<body class="flex bg-primary">
+<body class="flex bg-primary word-spacing">
     <header class="flex">
         <h1 class="white-font">devfinder</h1>
         <button class="bg-primary gray-font">LIGHT</button>
     </header>
     <div class="search-bar bg-second radius">
         <i style="color: #0079ff;" class="fa-solid fa-magnifying-glass fa-xl"></i>
-        <input class="bg-second" type="text" name="" id="username" placeholder="Search GitHub username">
-        <button class="blue-background white-font radius" id="search-button" onclick="getUserInfo()">Search</button>
+        <input class="bg-second gray-font" type="text" name="" id="input" placeholder="Search GitHub username">
+        <button class="blue-background white-font radius" id="search-button">Search</button>
     </div>
-    <main class="bg-second radius">
-        
+    <main class="bg-second radius grid">
         <div id="info" class="grid">
-            <img id="profile" src="" alt="">
+            <img id="profile" src="https://avatars.githubusercontent.com/u/66757774?v=4" alt="">
             <div>
-                <h2>The Octocat</h2>
-                <p>@octocat</p>
-                <p>Joined 25 Jan 2011</p>
+                <h2 id="username" class="white-font">kropkakropkakropka</h2>
+                <p id="login">@kropkakropkakropka</p>
+                <p id="date" class="gray-font">Joined 25 Jan 2011</p>
             </div>
-            <div id="description"></div>
         </div>
-        <div id="stats" class="bg-primary radius">
-            <p>Repos</p>
-            <p>0</p>
-            <p>Followers</p>
-            <p>0</p>
-            <p>Following</p>
-            <p>0</p>
+        <div id="description" class="white-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure labore velit eaque impedit vitae. Aperiam neque molestiae obcaecati alias adipisci, sint corrupti. Cupiditate earum dolorum, repudiandae sit voluptates temporibus!</div>
+        <div id="stats" class="bg-primary radius flex">
+            <div>
+                <h3>Repos</h3>
+                <p id="repos">0</p>
+            </div>
+            <div>
+                <h3>Followers</h3>
+                <p id="followers">0</p>
+            </div>
+            <div>
+                <h3>Following</h3>
+                <p id="following">0</p>
+            </div>
         </div>
-        <div id="links" class="">
-            <div class="link"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="link"><i class="fa-solid fa-link"></i></div>
-            <div class="link"><i class="fa-brands fa-twitter"></i></div>
-            <div class="link"><i class="fa-solid fa-building"></i></div>
+        <div id="links" class="grid gray-font">
+            <div class="link">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <span id="location"></span>
+            </div>
+            <div class="link"><i class="fa-solid fa-link fa-xl"></i><span id="blog"></span></div>
+            <div class="link"><i class="fa-brands fa-twitter fa-xl"></i><span id="twitter"></span></div>
+            <div class="link"><i class="fa-solid fa-building fa-xl"></i><span id="company"></span></div>
         </div>
     </main>
     <script src="index.js"></script>
