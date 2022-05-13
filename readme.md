@@ -34,4 +34,8 @@ Simple web app that uses github api to pull data and display it
 - Website - 
 - Twitter - 
 
+Todo:
+- add font sizes
+- fix bottom links placement
+
 
