@@ -37,5 +37,6 @@ Simple web app that uses github api to pull data and display it
 Todo:
 - add font sizes
 - fix bottom links placement
+- I will style it for mobile first
 
 
