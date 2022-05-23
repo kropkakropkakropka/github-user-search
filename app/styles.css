@@ -118,9 +118,9 @@ input{
 
 body{
   flex-direction: column;
+  justify-content: center;
   background-color: blue;
-  padding-inline: 40px;
-  padding-top: 40px;
+  padding: 0 25%;
 }
 header{
   width: 100%;
@@ -128,9 +128,10 @@ header{
 }
 
 main{
+  grid-template-columns: 1fr 3fr;
   background-color: gray;
   width: 100%;
-  padding: 45px 25px 45px 25px; /*can i do it with clamp?*/
+  padding: 5% 7%; /*can i do it with clamp?*/
 }
 button{
   border: none;
@@ -139,16 +140,21 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5px 5px 5px;
+  padding: 10px 15px;
   height: 60px;
   font-size: 1.1em;
 }
 .link span{
   padding-left: 15px;
 }
+@media only screen and (max-width: 700px){
+  #info{
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+}
 #info{
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
+  justify-content: space-between;
 }
 #search-button{
   padding: 0 20px 0 20px;
@@ -167,10 +173,13 @@ button{
 }
 #profile{
   border-radius: 50%;
+  max-width: 80%;
 }
 #links{
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
+
 #login{
   color: blue;
 }

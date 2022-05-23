@@ -20,11 +20,10 @@ Simple web app that uses github api to pull data and display it
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - JavaScript
 
 ### What I learned
-
+I'm breaindead
 
 ### Useful resources
 
@@ -37,6 +36,6 @@ Simple web app that uses github api to pull data and display it
 Todo:
 - add font sizes
 - fix bottom links placement
-- I will style it for mobile first
+- fiure out what the fuck am I doing cause I have no clue
 
 
