@@ -35,7 +35,6 @@ I'm breaindead
 
 Todo:
 - add light mode
-- make it responsive
-- figure out what the fuck am I doing cause I have no clue
+- make it responsive, oh god
 
 

@@ -43,7 +43,7 @@ function getUserInfo(username){
 }
 
 function displayUserInfo(data){
-
+    //hmm
     profilePic.src = data.avatar_url;
     username.innerText = (data.name == null) ? "No name was found" : data.name;
     login.innerText = '@' + data.login;
