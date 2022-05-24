@@ -1,3 +1,4 @@
+const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nove","Dec"];
 const button = document.getElementById('search-button');
 const input = document.getElementById('input');
 
@@ -44,9 +45,10 @@ function getUserInfo(username){
 function displayUserInfo(data){
 
     profilePic.src = data.avatar_url;
-    username.innerText = data.name;
+    username.innerText = (data.name == null) ? "No name was found" : data.name;
     login.innerText = '@' + data.login;
-    date.innerText = data.created_at;
+    dateSplitted = data.created_at.split('-');
+    date.innerText = `Joined ${dateSplitted[2].split('T')[0]} ${month[dateSplitted[1] - 1]}, ${dateSplitted[0]}`;
 
     userRepos.innerText = data.public_repos;
     userFollowers.innerText = data.followers;
@@ -56,6 +58,5 @@ function displayUserInfo(data){
     userBlog.innerText = (data.blog == "") ? "Not Available" : data.blog;
     userTwitter.innerText = (data.twitter_username == null) ? "Not Available" : data.twitter_username;
     userCompany.innerText = (data.company == null) ? "Not Available" : data.company;
-    console.log(data)
 }
 

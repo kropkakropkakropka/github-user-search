@@ -1,6 +1,6 @@
 # Github User Search
 
-Simple web app that uses github api to pull data and display it
+This is a solution to the GitHub user search app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ![](./screenshot.jpg)
 
@@ -34,8 +34,8 @@ I'm breaindead
 - Twitter - 
 
 Todo:
-- add font sizes
-- fix bottom links placement
-- fiure out what the fuck am I doing cause I have no clue
+- add light mode
+- make it responsive
+- figure out what the fuck am I doing cause I have no clue
 
 

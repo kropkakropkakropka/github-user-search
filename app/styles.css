@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 :root{
   /* colors */
   --clr-main: #141D2F;
@@ -7,8 +8,11 @@
   --clr-blue: #0079ff;
   /* font-sizes for mobile*/
 
-  /* font-families */
-  
+  /* font */
+  --roboto: 'Roboto', sans-serif;
+  --fw-300: 300;
+  --fw-500: 500;
+
   --border-radius: 10px;
 }
 /* Box sizing rules */
@@ -111,6 +115,9 @@ input{
 .white-font {color: var(--clr-white);}
 .gray-font {color: var(--clr-gray);}
 .blue-background {background-color: var(--clr-blue);}
+.roboto-font {font-family: var(--roboto);}
+.font-weight--500 {font-weight: var(--fw-500);}
+.font-weight--300 {font-weight: var(--fw-300);}
 /* ------------------- */
 /* Page specific       */
 /* ------------------- */
@@ -120,7 +127,7 @@ body{
   flex-direction: column;
   justify-content: center;
   background-color: blue;
-  padding: 0 25%;
+  padding: 0 27%;
 }
 header{
   width: 100%;
@@ -135,6 +142,15 @@ main{
 }
 button{
   border: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: var(--fw-500);
 }
 .search-bar{
   display: flex;
@@ -155,6 +171,10 @@ button{
 }
 #info{
   justify-content: space-between;
+}
+#input{
+  width: 100%;
+  padding-left: 1%;
 }
 #search-button{
   padding: 0 20px 0 20px;
@@ -179,7 +199,9 @@ button{
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
-
+#links span{
+  padding-left: 10px;
+}
 #login{
   color: blue;
 }
