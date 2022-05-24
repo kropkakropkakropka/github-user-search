@@ -48,7 +48,7 @@ function displayUserInfo(data){
     username.innerText = (data.name == null) ? "No name was found" : data.name;
     login.innerText = '@' + data.login;
     dateSplitted = data.created_at.split('-');
-    date.innerText = `Joined ${dateSplitted[2].split('T')[0]} ${month[dateSplitted[1] - 1]}, ${dateSplitted[0]}`;
+    date.innerText = `Joined ${dateSplitted[2].split('T')[0]} ${month[dateSplitted[1] - 1]} ${dateSplitted[0]}`;
 
     userRepos.innerText = data.public_repos;
     userFollowers.innerText = data.followers;
