@@ -7,7 +7,9 @@
   --clr-white: #ffffff; /*#f1f2f6*/
   --clr-blue: #0079ff;
   /* font-sizes for mobile*/
-
+  --fs-big: 1.3rem;
+  --fs-medium: 1.1rem;
+  --fs-small: 0.9rem;
   /* font */
   --roboto: 'Roboto', sans-serif;
   --fw-300: 300;
@@ -126,8 +128,9 @@ input{
 body{
   flex-direction: column;
   justify-content: center;
-  background-color: blue;
-  padding: 0 27%;
+  width: 45%;
+  min-width: 700px;
+  margin-inline: auto;
 }
 header{
   width: 100%;
@@ -135,10 +138,7 @@ header{
 }
 
 main{
-  grid-template-columns: 1fr 3fr;
-  background-color: gray;
-  width: 100%;
-  padding: 5% 7%; /*can i do it with clamp?*/
+  padding: 2.5em 3em;
 }
 button{
   border: none;
@@ -152,6 +152,30 @@ h5,
 h6{
   font-weight: var(--fw-500);
 }
+@media only screen and (max-width: 750px){
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body{
+    min-width: 490px;
+  }
+}
+@media only screen and (max-width: 500px){
+  body{
+    min-width: 390px;
+  }
+}
+@media only screen and (max-width: 400px){
+  body{
+    min-width: 90%;
+  }
+  main{
+    padding: 1em 1em;
+  }
+}
+
 .search-bar{
   display: flex;
   justify-content: space-between;
@@ -160,17 +184,44 @@ h6{
   height: 60px;
   font-size: 1.1em;
 }
+.container{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.upper-container{
+  display: flex;
+  justify-content: space-between;
+}
+.container--bottom{
+  margin-left: 11rem;
+}
+@media only screen and (max-width: 1650px){
+  .container--bottom{
+    margin-left: 9.7rem;
+  }
+}
+@media only screen and (max-width: 1550px){
+  .container--bottom{
+    margin-left: 9.3rem;
+  }
+}
+@media only screen and (max-width: 750px){
+  .upper-container{
+    flex-direction: column;
+    gap: -2rem;
+  }
+  .container--bottom{
+    margin-left: 0.5rem;
+  }
+}
+/* this is just fucking dumb but w/e */
+
 .link span{
   padding-left: 15px;
 }
-@media only screen and (max-width: 700px){
-  #info{
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-  }
-}
+
 #info{
-  justify-content: space-between;
+  grid-template-columns: 1fr 4fr;
 }
 #input{
   width: 100%;
@@ -193,7 +244,9 @@ h6{
 }
 #profile{
   border-radius: 50%;
-  max-width: 80%;
+  max-width: 90%;
+  min-width: 120px;
+  margin-inline: auto;
 }
 #links{
   grid-template-columns: repeat(2, 1fr);
@@ -203,5 +256,65 @@ h6{
   padding-left: 10px;
 }
 #login{
-  color: blue;
+  color: var(--clr-blue);
+}
+#username{
+  margin-bottom: 0.2em;
+}
+#description{
+  margin-top: -4rem;
+}
+@media only screen and (max-width: 750px){
+  #info{
+    grid-template-columns: repeat();
+  }
+  #description{
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 500px){
+  #links{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  #stats h3{
+    font-size: var(--fs-small);
+  }
+  #username{
+    font-size: var(--fs-big);
+  }
+  #login{
+    font-size: var(--fs-small);
+  }
+  #date{
+    font-size: var(--fs-small);
+  }
+  #profile{
+    min-width: 90px;
+  }
+  #links{
+    font-size: var(--fs-small);
+  }
+}
+@media only screen and (max-width: 400px){
+  #username{
+    font-size: var(--fs-medium);
+  }
+  #links{
+    font-size: var(--fs-small);
+  }
+  #stats{
+    padding: 0.9rem 1.3rem; 
+  }
+}
+@media only screen and (max-width: 330px){
+  *{
+    font-size: var(--fs-small);
+  }
+  h1{
+    font-size: var(--fs-big);
+  }
+  #stats{
+    padding: 0.5rem 0.6rem; 
+  }
 }

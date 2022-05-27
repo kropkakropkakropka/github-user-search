@@ -23,8 +23,7 @@ This is a solution to the GitHub user search app challenge on Frontend Mentor. F
 - JavaScript
 
 ### What I learned
-I'm breaindead
-
+I might be the worst dev on the planet earth
 ### Useful resources
 
 
@@ -35,6 +34,5 @@ I'm breaindead
 
 Todo:
 - add light mode
-- make it responsive, oh god
 
 
