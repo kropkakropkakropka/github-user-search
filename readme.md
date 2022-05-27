@@ -34,5 +34,6 @@ I might be the worst dev on the planet earth
 
 Todo:
 - add light mode
+- fix description (it doesn't work)
 
 
