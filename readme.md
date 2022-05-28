@@ -3,16 +3,8 @@
 This is a solution to the GitHub user search app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ![](./screenshot.jpg)
+![](./screenshot2.jpg)
 
-## Table of contents
-
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
-## My process
 
 ### Built with
 
@@ -22,10 +14,6 @@ This is a solution to the GitHub user search app challenge on Frontend Mentor. F
 - CSS Grid
 - JavaScript
 
-### What I learned
-I might be the worst dev on the planet earth
-### Useful resources
-
 
 ## Author
 
@@ -33,7 +21,7 @@ I might be the worst dev on the planet earth
 - Twitter - 
 
 Todo:
-- add light mode
-- fix description (it doesn't work)
+- need to learn how to use localStorage for dakr/light mode
+- clicking github handle should redirect to github page
 
 

@@ -10,28 +10,31 @@
 </head>
 <body class="flex bg-primary word-spacing roboto-font font-weight--300">
     <header class="flex">
-        <h1 class="white-font">devfinder</h1>
-        <button class="bg-primary gray-font">LIGHT <i class="fa-solid fa-sun fa-fw fa-xl"></i></button>
+        <h1 class="main-font">devfinder</h1>
+        <div>
+            <button class="bg-primary second-font dark" id="mode-toggle">LIGHT <i class="fa-solid fa-sun fa-fw fa-xl"></i></button>
+        </div>
     </header>
     <div class="search-bar bg-second radius">
         <i style="color: #0079ff;" class="fa-solid fa-magnifying-glass fa-xl"></i>
-        <input class="bg-second gray-font" type="text" name="" id="input" placeholder="Search GitHub username...">
-        <button class="blue-background white-font radius" id="search-button">Search</button>
+        <input class="bg-second second-font" type="text" name="" id="input" placeholder="Search GitHub username...">
+        <button class="blue-background main-font radius" id="search-button">Search</button>
     </div>
     <main class="bg-second radius">
+        <div class="no-user main-font">No user was found : (</div>
         <section class="container flex">
             <div id="info" class="grid">
                 <img id="profile" src="https://avatars.githubusercontent.com/u/66757774?v=4" alt="Profile picture">
                 <div class="upper-container">
                     <div>
-                        <h2 id="username" class="white-font">kropkakropkakropka</h2>
+                        <h2 id="username" class="main-font">kropkakropkakropka</h2>
                         <p id="login">@kropkakropkakropka</p>
                     </div>
-                    <p id="date" class="gray-font">Joined 25 Jan 2011</p>
+                    <p id="date" class="second-font">Joined 25 Jan 2011</p>
                 </div>
             </div>
             <div class="container container--bottom flex">
-                <div id="description" class="white-font">Description</div>
+                <div id="description" class="main-font">Bio</div>
                 <div id="stats" class="bg-primary radius flex">
                     <div>
                         <h3>Repos</h3>
@@ -46,7 +49,7 @@
                         <p id="following">0</p>
                     </div>
                 </div>
-                <div id="links" class="grid gray-font">
+                <div id="links" class="grid second-font">
                     <div><i id="icon" class="fa-solid fa-location-dot fa-fw fa-xl"></i><span id="location">Location</span></div>
                     <div><i class="fa-solid fa-link fa-fw fa-xl"></i><span id="blog">Blog</span></div>
                     <div><i class="fa-brands fa-twitter fa-fw fa-xl"></i><span id="twitter">Twitter</span></div>

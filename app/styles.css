@@ -2,10 +2,11 @@
 :root{
   /* colors */
   --clr-main: #141D2F;
-  --clr-second: #1E2A47; /*#576574*/
-  --clr-gray: #ced6e0;
-  --clr-white: #ffffff; /*#f1f2f6*/
+  --clr-second: #1E2A47; 
+  --clr-second-font: #ced6e0;
+  --clr-main-font: #ffffff;
   --clr-blue: #0079ff;
+
   /* font-sizes for mobile*/
   --fs-big: 1.3rem;
   --fs-medium: 1.1rem;
@@ -114,8 +115,8 @@ input{
 .radius {border-radius: var(--border-radius);}
 .bg-primary {background-color: var(--clr-main);}
 .bg-second {background-color: var(--clr-second);}
-.white-font {color: var(--clr-white);}
-.gray-font {color: var(--clr-gray);}
+.main-font {color: var(--clr-main-font);}
+.second-font {color: var(--clr-second-font);}
 .blue-background {background-color: var(--clr-blue);}
 .roboto-font {font-family: var(--roboto);}
 .font-weight--500 {font-weight: var(--fw-500);}
@@ -175,7 +176,11 @@ h6{
     padding: 1em 1em;
   }
 }
-
+.no-user{
+  display: none;
+  justify-content: center;
+  
+}
 .search-bar{
   display: flex;
   justify-content: space-between;
@@ -237,10 +242,10 @@ h6{
 }
 #stats p{
   padding-top: 4px;
-  color: var(--clr-white);
+  color: var(--clr-main-font);
 }
 #stats h3{
-  color: var(--clr-gray);
+  color: var(--clr-second-font);
 }
 #profile{
   border-radius: 50%;
