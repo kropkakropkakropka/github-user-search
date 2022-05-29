@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,57 +9,58 @@
     <script src="https://kit.fontawesome.com/73aecc7b50.js" crossorigin="anonymous"></script>
     <title>Github user search</title>
 </head>
+
 <body class="flex bg-primary word-spacing roboto-font font-weight--300">
     <header class="flex">
         <h1 class="main-font">devfinder</h1>
         <div>
-            <button class="bg-primary second-font dark" id="mode-toggle">LIGHT <i class="fa-solid fa-sun fa-fw fa-xl"></i></button>
+            <button class="bg-primary second-font dark" id="mode-toggle">LIGHT <i
+                    class="fa-solid fa-sun fa-fw fa-xl"></i></button>
         </div>
     </header>
-    <div class="search-bar bg-second radius">
+    <section class="search-bar bg-second radius">
         <i style="color: #0079ff;" class="fa-solid fa-magnifying-glass fa-xl"></i>
         <input class="bg-second second-font" type="text" name="" id="input" placeholder="Search GitHub username...">
         <button class="blue-background main-font radius" id="search-button">Search</button>
-    </div>
-    <main class="bg-second radius">
+    </section>
+    <main class="bg-second radius container flex">
         <div class="no-user main-font">No user was found : (</div>
-        <section class="container flex">
-            <div id="info" class="grid">
-                <img id="profile" src="https://avatars.githubusercontent.com/u/66757774?v=4" alt="Profile picture">
-                <div class="upper-container">
-                    <div>
-                        <h2 id="username" class="main-font">kropkakropkakropka</h2>
-                        <p id="login">@kropkakropkakropka</p>
-                    </div>
-                    <p id="date" class="second-font">Joined 25 Jan 2011</p>
+        <section id="info" class="grid">
+            <img id="profile" src="https://avatars.githubusercontent.com/u/66757774?v=4" alt="Profile picture">
+            <div class="upper-container">
+                <div>
+                    <h2 id="username" class="main-font">kropkakropkakropka</h2>
+                    <p id="login">@kropkakropkakropka</p>
+                </div>
+                <p id="date" class="second-font">Joined 25 Jan 2011</p>
+            </div>
+        </section>
+        <section id="bottom-info" class="container container--bottom flex">
+            <p id="description" class="main-font">Bio</p>
+            <div id="stats" class="bg-primary radius flex">
+                <div>
+                    <h3>Repos</h3>
+                    <p id="repos">0</p>
+                </div>
+                <div>
+                    <h3>Followers</h3>
+                    <p id="followers">0</p>
+                </div>
+                <div>
+                    <h3>Following</h3>
+                    <p id="following">0</p>
                 </div>
             </div>
-            <div class="container container--bottom flex">
-                <div id="description" class="main-font">Bio</div>
-                <div id="stats" class="bg-primary radius flex">
-                    <div>
-                        <h3>Repos</h3>
-                        <p id="repos">0</p>
-                    </div>
-                    <div>
-                        <h3>Followers</h3>
-                        <p id="followers">0</p>
-                    </div>
-                    <div>
-                        <h3>Following</h3>
-                        <p id="following">0</p>
-                    </div>
+            <div id="links" class="grid second-font">
+                <div><i id="icon" class="fa-solid fa-location-dot fa-fw fa-xl"></i><span id="location">Location</span>
                 </div>
-                <div id="links" class="grid second-font">
-                    <div><i id="icon" class="fa-solid fa-location-dot fa-fw fa-xl"></i><span id="location">Location</span></div>
-                    <div><i class="fa-solid fa-link fa-fw fa-xl"></i><span id="blog">Blog</span></div>
-                    <div><i class="fa-brands fa-twitter fa-fw fa-xl"></i><span id="twitter">Twitter</span></div>
-                    <div><i class="fa-solid fa-building fa-fw fa-xl"></i><span id="company">Company</span></div>
-                </div>
+                <div><i class="fa-solid fa-link fa-fw fa-xl"></i><span id="blog">Blog</span></div>
+                <div><i class="fa-brands fa-twitter fa-fw fa-xl"></i><span id="twitter">Twitter</span></div>
+                <div><i class="fa-solid fa-building fa-fw fa-xl"></i><span id="company">Company</span></div>
             </div>
-            
         </section>
     </main>
     <script src="index.js"></script>
 </body>
+
 </html>

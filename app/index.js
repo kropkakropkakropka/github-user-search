@@ -18,7 +18,9 @@ const userBlog = document.getElementById('blog');
 const userTwitter = document.getElementById('twitter');
 const userCompany = document.getElementById('company');
 
-const container = document.querySelector('.container')
+
+const info = document.getElementById('info')
+const bottomInfo = document.getElementById('bottom-info')
 const noUser = document.querySelector('.no-user')
 
 const modeButton = document.getElementById('mode-toggle')
@@ -53,11 +55,13 @@ function displayUserInfo(data){
     //hmm
     if(data.message == "Not Found"){
         console.log("siema")
-        container.style.display = 'none'
+        info.style.display = 'none'
+        bottomInfo.style.display = 'none'
         noUser.style.display = 'flex';
     }
     else{
-        container.style.display = 'flex'
+        info.style.display = 'grid'
+        bottomInfo.style.display = 'flex'
         noUser.style.display = 'none';
         profilePic.src = data.avatar_url;
         username.innerText = (data.name == null) ? "No name was found" : data.name;
