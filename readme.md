@@ -17,11 +17,9 @@ Live site - https://kropkakropkakropka.github.io/github-user-search/
 
 ## Author
 
-- Website - 
-- Twitter - 
+- Website - http://jnowak.site
 
 Todo:
-- need to learn how to use localStorage for dakr/light mode
 - clicking github handle should redirect to github page
 
 
